@@ -39,6 +39,10 @@ public class Main {
         System.out.println(x.surfaceArea());
     }
 
+    public static void sphereTest() {
+
+    }
+
     public static void main(String[] args) {
 
         cubeTest();

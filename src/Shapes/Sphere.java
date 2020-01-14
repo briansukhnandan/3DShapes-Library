@@ -41,6 +41,7 @@ public class Sphere {
     /**
      * .surfaceArea() - Calculates the Surface Area of a sphere by doing 4*pi*r^2.
      *
+     * @return The Surface Area of the Sphere.
      * */
     public double surfaceArea () { return 4*Math.PI*(radius*radius); }
 

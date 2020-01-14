@@ -1,11 +1,6 @@
-package Shapes.tests;
+import Shapes.*;
 
-import Shapes.Cube;
-import Shapes.Cylinder;
-import Shapes.Rectangular_Prism;
-import Shapes.Triangular_Prism;
-
-public class Main {
+public class Tests {
 
     public static void cubeTest() {
         //int x = 100;
@@ -26,6 +21,8 @@ public class Main {
 
     public static void cylinderTest() {
         Cylinder s = new Cylinder(5, 4);
+        System.out.println();
+        System.out.println("Cylinder test");
         System.out.println(s.Volume());
         System.out.println(s.lateralSurfaceArea());
         System.out.println(s.BaseHeightSurfaceArea());
@@ -34,14 +31,30 @@ public class Main {
 
     public static void triangularPrismTest() {
         Triangular_Prism x = new Triangular_Prism(4, Math.sqrt(45), 12, false);
+        System.out.println();
         System.out.println("Triangular Prism Test: ");
         System.out.println(x.areaOfFace());
         System.out.println(x.surfaceArea());
     }
 
     public static void sphereTest() {
-
+        Sphere x = new Sphere(5);
+        System.out.println();
+        System.out.println("Sphere Test: ");
+        System.out.println(x.Volume() + " - Volume");
+        System.out.println(x.surfaceArea() + " - SA");
     }
+
+    public static void squarePyramidTest() {
+        Square_Pyramid x = new Square_Pyramid(6, 4);
+        System.out.println();
+        System.out.println(x.getSideLength()+" "+x.getHeight());
+        System.out.println( (0.25) * (x.side_length*x.side_length) );
+        System.out.println("Square_Pyramid Test: ");
+        System.out.println(x.slantHeight() + " - Slant Height");
+        System.out.println(x.lateralEdgeLength() + " - lateralEdgeLength");
+    }
+
 
     public static void main(String[] args) {
 
@@ -49,6 +62,8 @@ public class Main {
         rectangularPrismTest();
         cylinderTest();
         triangularPrismTest();
+        sphereTest();
+        squarePyramidTest();
 
     }
 

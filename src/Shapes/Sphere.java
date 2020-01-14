@@ -31,9 +31,10 @@ public class Sphere {
     public double Volume () { return (4/3)*Math.PI*(radius*radius*radius); }
 
     /**
-     * .Circumference() - Calculates the circumference of the sphere by doing 2(pi)r.
+     * .Circumference() - Calculates the circumference of a top-down
+     *  cross-section of the sphere by doing 2*(pi)*r.
      *
-     * @return The circumference of the sphere.
+     * @return The circumference of a cross-section the sphere.
      * */
     public double Circumference () { return 2*Math.PI*radius; }
 
@@ -42,5 +43,11 @@ public class Sphere {
      *
      * */
     public double surfaceArea () { return 4*Math.PI*(radius*radius); }
+
+    /**
+     * Get/Set methods.
+     */
+    public double getRadius () { return radius; }
+    public void setRadius (double x) { radius = x; }
 
 }

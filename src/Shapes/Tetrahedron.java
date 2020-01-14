@@ -12,7 +12,7 @@ public class Tetrahedron {
 
     /**
      * Constructor for handling user-defined measurements.
-     * Also checks to see if any of the supplied dimensions is negative.
+     * Also checks to see if any of the supplied dimensions are negative.
      *
      * @param e Length of an edge of the Tetrahedron.
      * */

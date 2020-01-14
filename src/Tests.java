@@ -55,6 +55,30 @@ public class Tests {
         System.out.println(x.lateralEdgeLength() + " - lateralEdgeLength");
     }
 
+    public static void tetrahedronTest() {
+        Tetrahedron x = new Tetrahedron(3);
+        System.out.println();
+        System.out.println("Tetrahedron Test: ");
+        System.out.println(x.surfaceArea() + " - Surface Area");
+        System.out.println(x.Volume() + " - Volume");
+    }
+
+    public static void dodecahedronTest() {
+        Dodecahedron x = new Dodecahedron(3);
+        System.out.println();
+        System.out.println("Dodecahedron Test: ");
+        System.out.println(x.surfaceArea() + " - Surface Area");
+        System.out.println(x.Volume() + " - Volume");
+    }
+
+    public static void icosahedronTest() {
+        Icosahedron x = new Icosahedron(3);
+        System.out.println();
+        System.out.println("Icosahedron Test: ");
+        System.out.println(x.surfaceArea() + " - Surface Area");
+        System.out.println(x.Volume() + " - Volume");
+    }
+
 
     public static void main(String[] args) {
 
@@ -64,6 +88,9 @@ public class Tests {
         triangularPrismTest();
         sphereTest();
         squarePyramidTest();
+        tetrahedronTest();
+        dodecahedronTest();
+        icosahedronTest();
 
     }
 

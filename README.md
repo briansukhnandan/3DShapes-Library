@@ -7,3 +7,8 @@ After adding it to your classpath (depending on your IDE), you can reference sha
 ```
 import Shapes.Cube;
 ```
+
+Alternatively, you can import all Shapes in the library by doing:
+```
+import Shapes.*;
+```

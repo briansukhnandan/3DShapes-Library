@@ -12,3 +12,9 @@ Alternatively, you can import all Shapes in the library by doing:
 ```
 import Shapes.*;
 ```
+
+A simple example:
+```
+Cube x = new Cube(3); // Writing a cube of edge length 3 to memory.
+System.out.println(x.Volume()); // Prints 27.0 as expected.
+```

@@ -1,6 +1,6 @@
 # 3DShapes Library
 ## What does this library do exactly?
-In a nutshell, this library is a toolkit of algorithms to do various calculations of different 3D-shapes.
+In a nutshell, this library is a toolkit of algorithms to do various calculations of different 3D-shapes, all of which are done in O(1) time, making this a very efficient library.
 
 ## How do I use it?
 After adding the .jar located in 'out/artifacts' to your classpath (depending on your IDE), you can reference shapes like so (Cube for example):
